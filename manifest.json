@@ -1,0 +1,24 @@
+{
+	"name": "Project Yoshi",
+	"description" : "hello",
+	"version": "1.1",
+	"options_ui": { "page": "options.html" , "open_in_tab": false },
+	"permissions": ["notifications","storage", "activeTab", "http://*/", "https://*/", "http://localhost:9999/*", "https://localhost:9999/*","https://demo.looker.com/*"],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"externally_connectable": {
+		"matches": ["https://localhost:9999/*","http://localhost:9999/*","https://demo.looker.com/*"]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.looker.com/*", "http://localhost:9999/*", "https://localhost:9999/*"
+			],
+			"js": ["jquery/jquery-3.2.1.min.js",
+				"content/content_sql.js"]
+		}
+	],
+	"manifest_version": 2
+}
