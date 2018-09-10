@@ -1,12 +1,17 @@
-Clone or download the repository
-Go to chrome://extensions/
-Turn on Developer Mode
-Click Load Unpacked
-Navigate to folder of the extension
+1. Clone or download the repository
 
-Go to https://demo.looker.com/sql
-You will see and Add To Looker button
+2. Go to chrome://extensions/
 
-Click it, go to options and fill in the details
+3. Turn on Developer Mode
 
-Bang away at the extension and track issues in GitHub
+4. Click Load Unpacked
+
+5. Navigate to folder of the extension
+
+6. Go to https://demo.looker.com/sql   You will see an Add To Looker button
+
+7. Click Add To Looker 
+
+8. Go to options and fill in the details
+
+9. Bang away at the extension and track issues in GitHub
